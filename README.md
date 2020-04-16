@@ -13,4 +13,4 @@ This is a project to implement Momentum among Chrome extension apps clone using 
 ## 결과물
 
 ## 참고사항
-- [필기](https://github.com/hhhan0315/momentum-clone/blob/master/memo.md)
+- [메모](https://github.com/hhhan0315/momentum-clone/blob/master/memo.md)
