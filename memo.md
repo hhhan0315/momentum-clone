@@ -28,6 +28,7 @@
   - [MDN - Element.classList](https://developer.mozilla.org/ko/docs/Web/API/Element/classList)
   - ```javascript
     // className으로 버튼 클릭 구현 -> 이전의 class 명이 사라지기 때문에 classList를 활용
+    const CLICKED_CLASS = "clicked";
     function handleClick() {
       // const currentClass = title.className;
       const hasClass = title.classList.contains(CLICKED_CLASS);
@@ -46,8 +47,33 @@
     }
     ```
 
-- Clock
+- clock
+
   - [MDN - Date](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date)
   - [MDN - 삼항 조건 연산자](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
   - [W3Schools - setInterval()](https://www.w3schools.com/jsref/met_win_setinterval.asp)
   - [stackoverflow - function in setInterval](https://stackoverflow.com/questions/20885236/javascript-function-in-setinterval)
+
+- save user name
+
+  - [MDN - Window.localStorage](https://developer.mozilla.org/ko/docs/Web/API/Window/localStorage)
+  - ```javascript
+    // 처음 동작 실행 시 currentUser === null 이기 때문에 askForName() 실행
+    // askForName()에 form.classList.add("showing")이 있기 때문에 class에 showing 클래스 이름이 추가된 모습
+    <form action="" class="js-form form showing">
+      <input type="text" placeholder="What is your name?">
+    </form>
+    <h4 class="js-greetings greetings">Hello rae</h4>
+
+    // 이후 제출을 하면 handleSubmit()에서 paintGreeting()과 saveName()을 실행
+    // saveName()에서는 localStorage에 저장
+    // paintGreeting()에서는 form에서의 showing 클래스 이름을 제거함으로써 display:none 실행
+    // greeting에서는 showing 클래스 이름을 추가함으로써 display:block 실행
+    <form action="" class="js-form form">
+      <input type="text" placeholder="What is your name?">
+    </form>
+    <h4 class="js-greetings greetings showing">Hello rae</h4>
+
+    // 각각의 클래스 이름을 언제 add, remove 해주는지에 따라서 css에서의 display:none, display:block 특징을 활용하는지를 깨달을 수 있었다.
+
+    ```
