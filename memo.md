@@ -45,3 +45,9 @@
       title.classList.toggle(CLICKED_CLASS);
     }
     ```
+
+- Clock
+  - [MDN - Date](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date)
+  - [MDN - 삼항 조건 연산자](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+  - [W3Schools - setInterval()](https://www.w3schools.com/jsref/met_win_setinterval.asp)
+  - [stackoverflow - function in setInterval](https://stackoverflow.com/questions/20885236/javascript-function-in-setinterval)
