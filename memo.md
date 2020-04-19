@@ -88,5 +88,10 @@
     - [MDN - JSON](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON) 중 JSON.parse(), JSON.stringify()
 
   - background
+
     - [MDN - Math](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math) 중 Math.floor(), Math.random()
     - [MDN - Image()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image)
+
+  - weather
+    - [MDN - Web API](https://developer.mozilla.org/ko/docs/Web/API/Geolocation) 중 geolocation.getCurrentPosition()
+    - [생활코딩 - fetch API](https://opentutorials.org/course/3281/20562)
