@@ -81,8 +81,12 @@
       ```
 
   - to do list
+
     - [MDN - Document.createElement()](https://developer.mozilla.org/ko/docs/Web/API/Document/createElement)
     - [MDN - Array](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array) 중 Array.prototype.filter(), Array.prototype.push(), Array.prototype.forEach()
     - [MDN - Node.appendChild()](https://developer.mozilla.org/ko/docs/Web/API/Node/appendChild)
     - [MDN - JSON](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON) 중 JSON.parse(), JSON.stringify()
-    -
+
+  - background
+    - [MDN - Math](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math) 중 Math.floor(), Math.random()
+    - [MDN - Image()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image)
