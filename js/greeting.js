@@ -1,9 +1,11 @@
 const form = document.querySelector(".js-form"),
   input = form.querySelector("input"),
-  greeting = document.querySelector(".js-greetings");
+  greeting = document.querySelector(".js-greetings"),
+  question = document.querySelector(".greeting-question");
 
 const USER_LS = "currentUser",
-  SHOWING_CN = "showing"; // CN: Class Name
+  SHOWING_CN = "showing", // CN: Class Name
+  HIDE_CN = "hide";
 
 function saveName(text) {
   localStorage.setItem(USER_LS, text);
@@ -24,7 +26,8 @@ function askForName() {
 function paintGreeting(text) {
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
-  greeting.innerText = `Hello ${text}`;
+  question.classList.add(HIDE_CN);
+  greeting.innerText = `Hello, ${text}`;
 }
 
 function loadName() {

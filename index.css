@@ -1,18 +1,46 @@
-body {
-  background-color: #2c3e50;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  color: #34495e;
+  background-color: #2c3e50;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.greeting-question {
+  font-size: 38px;
 }
 
 .form,
 .greetings {
   display: none;
+  font-size: 38px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .showing {
   display: block;
+}
+
+.hide {
+  display: none;
 }
 
 @keyframes fadeIn {
@@ -32,4 +60,73 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+.header {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .js-clock {
+  font-size: 64px;
+}
+
+.main .js-form input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  width: 400px;
+  height: 70px;
+  font-size: 35px;
+  color: white;
+}
+
+.main .js-toDoForm input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  width: 500px;
+  height: 70px;
+  font-size: 35px;
+  color: white;
+}
+
+.todo-question {
+  font-size: 38px;
+}
+
+.js-toDoList {
+  font-size: 25px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+button {
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  border: none;
+  border: 1px solid white;
+  outline: none;
+}
+
+li {
+  animation: fadeIn 1s ease-in-out;
 }
